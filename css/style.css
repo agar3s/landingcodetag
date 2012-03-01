@@ -1,4 +1,17 @@
-font-family: 'Armata', sans-serif;
+@font-face {
+	font-family: Novecentowide;
+	src: url('../fonts/Novecentowide-Bold.otf');
+}
+@font-face {
+	font-family: CoolveticaRg;
+	src: url('../fonts/coolvetica_rg.otf');
+}
+
+@font-face {
+	font-family: PT-Sans;
+	src: url('../fonts/PT-Sans/PTS55F.ttf');
+}
+font-family: PT-Sans, sans-serif;
 
 /*adding some style for buttons*/
 .clear { /* generic container (i.e. div) for floating buttons */
@@ -6,23 +19,33 @@ font-family: 'Armata', sans-serif;
     width: 100%;
 }
 
-a.button {
-    background: transparent url('../img/bg_button_a.gif') no-repeat scroll top right;
+a.buttonder {
+    background: transparent url('../img/botonder.png') no-repeat scroll top ;
     color: #444;
     display: block;
     float: left;
     font: normal 12px arial, sans-serif;
-    height: 24px;
-    margin-right: 6px;
-    padding-right: 18px; /* sliding doors padding */
+    height: 35px;
+    width: 180px;
+    margin:5px;
+    padding-top:15px;
+   	font-family:PT-Sans;
+   	font-size:1em;
     text-decoration: none;
 }
-
-a.button span {
-    background: transparent url('../img/bg_button_span.gif') no-repeat;
+a.buttonizq {
+    background: transparent url('../img/botonizq.png') no-repeat scroll top ;
+    color: #444;
     display: block;
-    line-height: 14px;
-    padding: 5px 0 5px 18px;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 35px;
+    width: 180px;
+    margin:5px;
+    padding-top:15px;   
+    font-family:PT-Sans; 
+    font-size:1em;
+    text-decoration: none;
 }
 
 a.button:active {
@@ -30,9 +53,3 @@ a.button:active {
     color: #000;
     outline: none; /* hide dotted outline in Firefox */
 }
-
-a.button:active span {
-    background-position: bottom left;
-    padding: 6px 0 4px 18px; /* push text down 1px */
-} 
-
