@@ -32,6 +32,8 @@ a.buttonder {
    	font-family:PT-Sans;
    	font-size:1em;
     text-decoration: none;
+    z-index:100;
+    position: relative;
 }
 a.buttonizq {
     background: transparent url('../img/botonizq.png') no-repeat scroll top ;
@@ -46,6 +48,8 @@ a.buttonizq {
     font-family:PT-Sans; 
     font-size:1em;
     text-decoration: none;
+    z-index:100;
+    position: relative;
 }
 
 a.button:active {
